@@ -1,20 +1,20 @@
 ﻿// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
 
 
-void polindrom_true5(string numbers)
-{
-    if (numbers[0] == numbers[4] && numbers[1] == numbers[3])
-    {
-        Console.WriteLine("Да");
-    }
-    else
-    {
-        Console.WriteLine("Нет");
-    }
-}
-Console.Write("Введите пятизначное число: ");
-string numbers_string5 = Console.ReadLine();
-polindrom_true5(numbers_string5);
+// void polindrom_true5(string numbers)
+// {
+//     if (numbers[0] == numbers[4] && numbers[1] == numbers[3])
+//     {
+//         Console.WriteLine("Да");
+//     }
+//     else
+//     {
+//         Console.WriteLine("Нет");
+//     }
+// }
+// Console.Write("Введите пятизначное число: ");
+// string numbers_string5 = Console.ReadLine();
+// polindrom_true5(numbers_string5);
 // Это метод для пятизнаных чисел, но он могут быть и не пятизнанчными, но все равно быть полиндромами
 // Поэтому следующий метод для все чисел, число цифр которых нечетно
 void polindrom_true(string numbers)

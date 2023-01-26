@@ -1,15 +1,21 @@
 ﻿// Задача 25: Напишите цикл, который принимает на вход два числа (A и B) и 
 // возводит число A в натуральную степень B.
-
-// 3, 5 -> 243 (3⁵)
-
-// 2, 4 -> 16
-Console.Clear();
-int A = int.Parse(Console.ReadLine());
-int B = int.Parse(Console.ReadLine());
-int result = 1;
-for (int i = B; i > 0; i--)
+int DegreeNumber(int A, int B)
 {
-    result = result * A;
+    int result = 1;
+    for (int i = 0; i < B; i++)
+    {
+        result *= A;
+    }
+    return result;
 }
-Console.WriteLine(result);
+
+Console.WriteLine("Введите число, которое хотите возвести в степень");
+string AString = Console.ReadLine();
+int A = Convert.ToInt32(AString);
+
+Console.WriteLine("Введите степень числа");
+string BString = Console.ReadLine();
+int B = Convert.ToInt32(BString);
+
+Console.WriteLine(DegreeNumber(A, B));

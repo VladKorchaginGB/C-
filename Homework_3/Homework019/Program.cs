@@ -5,7 +5,8 @@ void ThruePalindrome(int num)
     {
         int firstPart = num % 100;
         int secondPart = num / 1000;
-        if (firstPart - secondPart == -9 || firstPart - secondPart == 9)
+        int result = (firstPart - secondPart) % 9;
+        if (result == 0)
         {
             Console.WriteLine("Это палиндром!");
         }

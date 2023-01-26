@@ -1,10 +1,34 @@
 ﻿// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
+// Console.WriteLine("Введите число");
+// string numString = Console.ReadLine();
+// int numbers = Convert.ToInt32(numString);
 
-// 452 -> 11
 
-// 82 -> 10
+// void SumNumbers(int num)
+// {
+//     int lenghtNum = num;
+//     int count = 0;
+//     while (lenghtNum > 0)
+//     {
+//         lenghtNum /= 10;
+//         count += 1;
+//     }
+//     int[] arrayNumbers = new int[count];
+//     for (int i = 0; i < arrayNumbers.Length; i++)
+//     {
+//         arrayNumbers[i] = num % 10;
+//         num /= 10;
+//     }
+//     count = 0;
+//     for (int i = 0; i < arrayNumbers.Length; i++)
+//     {
+//         count += arrayNumbers[i];
+//     }
+//     Console.WriteLine(count);
 
-// 9012 -> 12
+// }
+// SumNumbers(numbers);
+// Очень сложное, длинное и неоптимальное решение
 
 Console.Clear();
 Console.Write("Введите число ");
